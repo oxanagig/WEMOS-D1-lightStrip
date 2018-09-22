@@ -1,0 +1,33 @@
+rule "Set RGB value LEDStrip"
+
+when
+
+        Item LEDStrip changed
+
+then
+
+        val hsbValue = LEDStrip.state as HSBType
+
+        val brightness = hsbValue.brightness.intValue
+
+        val redValue   = ((((hsbValue.red.intValue * 255) / 100) * brightness) / 100).toString
+
+        val greenValue = ((((hsbValue.green.intValue * 255) / 100) * brightness) / 100).toString
+
+        val blueValue  = ((((hsbValue.blue.intValue *255) / 100) * brightness) / 100).toString
+
+        val color = redValue + "," + greenValue + "," + blueValue
+        
+        sendCommand( LEDStripColor, color )
+
+end
+
+rule "Set LED Special Mode"
+
+when
+        Item SpecialMode changed
+
+then
+        val mode = SpecialMode.state
+        sendCommand(LEDStripColor, "mode")
+end

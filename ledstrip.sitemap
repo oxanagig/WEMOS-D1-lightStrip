@@ -1,0 +1,6 @@
+sitemap myHome label="Xiang's Home" {
+    Frame label="lighting" {
+        Colorpicker item=LEDStrip icon="light" label="LEDstrip for loft desk"
+        Selection item=SpecialMode label="Special Mode" icon="party" mappings=[off="off",nightClub="night club",breathing="breathing"]
+        }
+}

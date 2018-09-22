@@ -1,0 +1,11 @@
+{
+    "terminal.integrated.env.osx": {
+        "PATH": "/Users/xiang/.platformio/penv/bin:/Users/xiang/.platformio/penv:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/avr8-gnu-toolchain-darwin_x86_64/bin:/Applications/microchip/xc8/v1.34/bin:/Applications/microchip/xc8/v1.35/bin:/Applications/microchip/xc8/v1.42/bin:/usr/local/avr8-gnu-toolchain-darwin_x86_64/bin",
+        "PLATFORMIO_CALLER": "vscode"
+    },
+    "files.associations": {
+        "functional": "cpp",
+        "type_traits": "cpp",
+        "ostream": "cpp"
+    }
+}

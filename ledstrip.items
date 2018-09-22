@@ -1,0 +1,3 @@
+Color LEDStrip  "LEDStrip Color" <colorlight> (All)  
+String SpecialMode (All)
+String LEDStripColor (All) {mqtt=">[myBroker:devices/ledstrip/led/color/set:command:*:default]"}
